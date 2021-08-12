@@ -1,51 +1,87 @@
-:root {
+.breadcrumb {
+  background-color: #fff !important;
 }
 
-/* GENERAL */
-html {
-  box-sizing: border-box;
-  height: 100%;
-  scroll-behavior: smooth;
+.breadcrumb__link {
+  font-size: 10px;
+  line-height: 15px;
+  color: #a9a9a9;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.breadcrumb__link:hover {
+  text-decoration: none;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #fff;
+.products__link {
+  white-space: nowrap;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.products__link::after {
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-arrow-green-right.svg");
+  background-repeat: no-repeat;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.price {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  color: #6A983C;
+  white-space: nowrap;
 }
 
+.price__sale {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: line-through;
+}
 
-/* CONTAINER */
-.container {
-  max-width: 900px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: auto;
-  margin-right: auto;
+.btn-sm {
+  white-space: nowrap;
+}
+
+.btn__hearth {
+  display: block;
+  background-image: url("../img/ic-actions-heart.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  white-space: nowrap;
+}
+
+.btn__layout {
+  display: block;
+  background-image: url("../img/ic-layout-picture-right.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.nav {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.img-fluid {
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 560px) {
+  .breadcrumb__link {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .product__title {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .price {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
