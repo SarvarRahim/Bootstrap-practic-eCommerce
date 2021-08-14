@@ -10,191 +10,94 @@
 <body class="d-flex flex-column h-100">
 
   <div class="container-lg">
-    <ul class="breadcrumb bg-white">
-      <li class="breadcrumb-item">
-        <a class="breadcrumb-link text-secondary text-decoration-none" href="#">Homepage</a>
-      </li>
-      <li class="breadcrumb-item">
-        <a class="breadcrumb-link active text-dark text-decoration-none" href="#">Checkout page</a>
-      </li>
-    </ul>
 
-    <div class="biling-info d-flex justify-content-between align-items-center mb-4">
-      <div class="bilding__head">
-        <h1 class="h3 mb-0">Biling info</h1>
-        <p class="text-secondary mb-0">Please enter your billing info</p>
+    <div class="summary border p-3 rounded">
+      <h2 class="h3 font-weight-bold">Order Summary</h2>
+      <p class="text-secondary">Price can change depending on shipping method and taxes of your state.</p>
+      <div class="row">
+        <div class="col-5 col-sm-3">
+            <img class="d-block" src="img/product-img.png" alt="Photo product" width="100" height="67">
+          <button class="btn__like btn d-flex align-items-center pl-0">Wishlist</button>
+          <button class="btn__compare btn d-flex align-items-center pl-0">Compare</button>
+          <button class="btn__remove btn d-flex align-items-center pl-0">Remove</button>
+          </div>
+        <div class="col-7 col-sm-9">
+          <h3 class="h6">Product title</h3>
+          <dl>
+            <div class="d-flex">
+              <dd class="mr-3">Farm:</dd>
+              <dl class="mb-0">Tharamis Farm</dl>
+            </div>
+            <div class="d-flex">
+              <dd class="mr-3">Freshness:</dd>
+              <dl class="mb-0">1 day old</dl>
+            </div>
+          </dl>
+          <div class="price-or-select d-flex flex-column align-items-end flex-sm-row">
+            <div class="price d-flex flex-column">
+              <span class="h4 font-weight-bold text-success mb-0">36.99 USD</span>
+              <span class="price__sale text-secondary text-right text-sm-left">48.56 USD</span>
+            </div>
+            <div class="selects d-flex border align-items-center px-2 rounded-pill">
+              <span class="pcs d-inline-block text-secondary">1pcs | </span>
+              <form action="https://htmlacademy.ru" method="GET">
+                <select class="rounded border-0" name="products">
+                  <option value="pcs">Pcs</option>
+                  <option value="test">test</option>
+                  <option value="test1">test1</option>
+                  <option value="test2">test2</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <nav aria-label="Page navigation example">
-        <ul class="pagination list-unstyled m-0 justify-content-end border-0">
-          <li class="page-item disabled mr-1">
-            <a class="text-secondary text-decoration-none" href="#" tabindex="-1" aria-disabled="true">Step</a>
-          </li>
-          <li class="page-item mr-1">
-            <a class="text-secondary text-decoration-none" href="#">1</a>
-          </li>
-          <li class="page-item mr-1">
-            <a class="text-secondary text-decoration-none" href="#">of</a>
-          </li>
-          <li class="page-item">
-            <a class="text-secondary text-decoration-none" href="#">5</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="row mb-4">
+        <div class="col-5 col-sm-3">
+            <img class="d-block" src="img/product-img.png" alt="Photo product" width="100" height="67">
+          <button class="btn__like btn d-flex align-items-center pl-0">Wishlist</button>
+          <button class="btn__compare btn d-flex align-items-center pl-0">Compare</button>
+          <button class="btn__remove btn d-flex align-items-center pl-0">Remove</button>
+          </div>
+        <div class="col-7 col-sm-9">
+          <h3 class="h6">Product title</h3>
+          <dl>
+            <div class="d-flex">
+              <dd class="mr-3">Farm:</dd>
+              <dl class="mb-0">Tharamis Farm</dl>
+            </div>
+            <div class="d-flex">
+              <dd class="mr-3">Freshness:</dd>
+              <dl class="mb-0">1 day old</dl>
+            </div>
+          </dl>
+          <div class="price-or-select d-flex flex-column align-items-end flex-sm-row">
+            <div class="price d-flex flex-column">
+              <span class="h4 font-weight-bold text-success mb-0">36.99 USD</span>
+              <span class="price__sale text-secondary text-right text-sm-left">48.56 USD</span>
+            </div>
+            <div class="selects d-flex border align-items-center px-2 rounded-pill">
+              <span class="pcs d-inline-block text-secondary">1pcs | </span>
+              <form action="https://htmlacademy.ru" method="GET">
+                <select class="rounded border-0" name="products">
+                  <option value="pcs">Pcs</option>
+                  <option value="test">test</option>
+                  <option value="test1">test1</option>
+                  <option value="test2">test2</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="chekout">
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <div class="chekout__names row mb-4">
-          <div class="col-md-6 mb-3">
-            <label for="firstname">First name</label>
-            <input class="form-control bg-light rounded w-75" type="email" id="Lastname" aria-describedby="Lastname" name="firstname" placeholder="first name">
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="firstname">Last name</label>
-            <input class="form-control bg-light rounded w-75" type="email" id="Lastname" aria-describedby="Lastname" name="lastname" placeholder="Last name">
-          </div>
-
-
-          <div class="chekout__email col-md-6 mb-3">
-            <label for="exampleInputEmail1">Email address</label>
-            <input class="form-control bg-light w-75" type="email" id="exampleInputEmail1" aria-describedby="emailHelp" name="email address" placeholder="Email address">
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="exampleInputEmail1">Phone number</label>
-            <input class="form-control bg-light w-75" type="tel" id="exampleInputEmail1" aria-describedby="emailHelp" name="phone address" placeholder="Phone number">
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="exampleInputEmail1">Address</label>
-            <input class="form-control bg-light w-75" type="tel" id="exampleInputEmail1" aria-describedby="emailHelp" name="address address" placeholder="Address number">
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="exampleInputEmail1">Town / City</label>
-            <input class="form-control bg-light w-75" type="tel" id="exampleInputEmail1" aria-describedby="emailHelp" name="address address" placeholder="Address number">
-          </div>
-          <div class="col-md-6 mb-3">
-            <label>State / country</label>
-            <select class="form-control bg-light w-75" name="country">
-              <option value="" disabled>Choose a state or country</option>
-              <option value="usa">USA</option>
-              <option value="russian">Russian</option>
-              <option value="brazil">Brazil</option>
-              <option value="uzbekistan">Uzbekistan</option>
-            </select>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="exampleInputEmail1">ZIP/Postal code</label>
-            <input class="form-control bg-light w-75" type="password" id="exampleInputEmail1" aria-describedby="emailHelp" name="zip code address" placeholder="Postal code or Zip">
-          </div>
-          <div class="input-group mt-3 col-md-6">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <input type="checkbox" aria-label="Checkbox for following text input">
-              </div>
-            </div>
-            <input class="w-75 bg-light border-secondary" type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Ship to a different address?">
-          </div>
-        </div>
-
-        <section class="bill-method mb-5">
-
-          <div class="bill-info__top mb-3">
-            <h2 class="h4">Billing method</h2>
-            <div class="bill-info__top-inner text-secondary d-flex flex-wrap justify-content-between">
-              <p class="bill-info__text mr-2">Please enter your payment method</p>
-              <p class="bill-info__steps">Step 2 of 5</p>
-            </div>
-          </div>
-          <div class="input-group form-control mb-3 d-flex align-items-center justify-content-between flex-wrap w-75 bg-light">
-            <label class="mb-0 mr-2">
-              <input class="payment-method" type="radio">
-              <span class="payment-method__name">FedEx</span>
-            </label>
-            <span class="d-blcok mr-2 payment-method-fee font-weight-bold"><span class="text-success">+32 USD</span> Additional
-              price</span>
-            <img src="img/FedEx_Express 1.svg" width="54" height="16" alt="">
-          </div>
-          <div class="input-group form-control mb-0 d-flex align-items-center justify-content-between flex-wrap w-75 bg-light">
-            <label class="mb-0 mr-2">
-              <input class="bg-light" type="radio">
-              <span class="payment-method__name">DHL</span>
-            </label>
-            <span class="d-blcok mr-2 payment-method-fee font-weight-bold"><span class="text-success">+15 USD</span> Additional
-              price</span>
-            <img src="img/Vector.svg" width="70" height="16" alt="">
-          </div>
-        </section>
-
-        <div class="payment-method mt-5">
-          <h2 class="h4 font-weight-bold">Payment method</h2>
-          <div class="d-flex align-items-center justify-content-between">
-            <p class="text-black-50">Please enter your payment method</p>
-            <span class="text-black-50">Step 3 of 5</span>
-          </div>
-          <div class="custom-control custom-radio mb-3 bg-light rounded-lg mt-4 border border-light pl-0">
-            <div class="credit-card-wrapper bg-white p-4">
-              <div class="chek_visa d-flex justify-content-between">
-                <input type="radio" id="customRadio3" name="customRadioPayment" class="custom-control-input">
-                <h3 class="h5">Credit card</h3>
-                <img src="img/visa.svg" width="95" height="40" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-
-                  <div class="mt-3 mb-3">
-                    <label class="h6" for="validationDefault09">Card number</label>
-                    <input type="text" class="form-control bg-light rounded-lg" id="validationDefault09" placeholder="Card number" required>
-                  </div>
-                  <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                      <label class="h6" for="card-pay">Card holder</label>
-                      <input type="text" class="form-control bg-light rounded-lg" id="card-pay" placeholder="Card holder" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                      <label class="h6" for="cardPay">Expiration date</label>
-                      <input type="date" class="form-control bg-light rounded-lg" id="cardPay" placeholder="DD/MM/YY" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                      <label class="h6" for="validationDefault12">CVC</label>
-                      <input type="text" class="form-control bg-light rounded-lg" id="validationDefault12" placeholder="CVC" required>
-                    </div>
-                  </div>
-                </div>
-
-
-              <div class="payment-method__box border-secondary">
-                <div class="form-control input-group w-75">
-                  <label class="d-flex justify-content-between">
-                  <input class="bg-light" type="radio" name="visa">
-                  <span>Credit card
-                  <img src="img/visa.svg" alt="">
-                </span>
-                </label>
-                </div>
-              </div>
-
-              <div class="my-5">
-                <h2 class="h4">Additional informations</h2>
-                <div class="text-secondary d-flex flex-wrap justify-content-between">
-                  <p class="mr-2">Need something else? We will make it for you!</p>
-                  <p>Step 4 of 5</p>
-                </div>
-              </div>
-              <div class="additional-method__box">
-                <h3 class="h6">Order notes</h3>
-               <div class="form-floating">
-                 <textarea class="form-control additional-text" name="textarea"
-                   placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."
-                   id="floatingTextarea"></textarea>
-               </div>
-              </div>
-      </form>
     </div>
 
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>

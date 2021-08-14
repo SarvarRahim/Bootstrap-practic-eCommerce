@@ -69,6 +69,40 @@
   object-fit: cover;
 }
 
+.btn__like::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/ic-actions-heart.svg");
+  background-repeat: no-repeat;
+}
+
+.btn__compare::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/ic-layout-picture-right.svg");
+  background-repeat: no-repeat;
+}
+
+.btn__remove::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/ic-actions-close-simple.svg");
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 500px) {
+  .price-or-select {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 @media only screen and (min-width: 560px) {
   .breadcrumb__link {
     font-size: 12px;
