@@ -1,3 +1,241 @@
+:root{
+  --primary-color: #6A983C;
+}
+
+.breadcrumb-box{
+  background-color: #fff !important;
+}
+
+.outcome__star-box {
+  margin-bottom: 25px;
+}
+
+.outcome__star-box-inner {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+}
+
+.outcome__star-empty-box,
+.outcome__star-full-box {
+  display: flex;
+}
+
+.outcome__star-empty:not(:last-child),
+.outcome__star-full:not(:last-child) {
+  margin-right: 4px;
+}
+
+
+.outcome__star-full-box {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 82%;
+}
+
+.product-order{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #F5F5F5;
+}
+
+.product-order__price-box {
+  margin-right: 10px;
+}
+
+
+.product-order__select{
+  border: none;
+  background-color: #F9F9F9;
+}
+
+.product-order__price-new {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.product-order__price-old {
+  text-decoration-line: line-through;
+  color: #A9A9A9;
+  margin-bottom: 0;
+
+}
+
+.product-order__btn {
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 16px;
+  background-color: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.product-order__btn-number {
+  margin-right : 5px;
+  display: flex;
+  align-items: center;
+  color: #d1d1d1;
+  margin-right: 16px;
+}
+
+.product-order__btn-number::after{
+  margin-left: 16px;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 18px;
+  background-color: #D1D1D1;
+}
+
+.product-order__select {}
+
+.product-order__add-btn{
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+
+
+/* CHECKOUT */
+
+.breadcrumb-text{
+  font-size: 12px;
+  line-height: 16px;
+
+}
+
+.bill-info__text,
+.bill-info__steps {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form-check-input{
+  margin-left: -0.3rem;
+}
+
+.payment-method__type{
+  display: inline-flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+
+.payment-method__box{
+  position: relative;
+}
+
+.payment-method::before{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.payment-method__type::before{
+  margin-right: 5px;
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #151515;
+  transition: border 0.3s ease;
+}
+
+.payment-method:checked ~ .payment-method__type::before {
+  border: 5px solid #151515;
+}
+
+.payment-method-fee{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.additional-text{
+  font-size: 14px;
+  line-height: 19px;
+  resize: none;
+  min-height: 150px;
+}
+
+.confirmation-input{
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.billing-method__box {
+  width: 100%;
+
+}
+
+.billing-method__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #D1D1D1;
+  width: 100%;
+  padding: 15px 17px;
+  background-color: #F9F9F9;
+  border-radius: 12px;
+}
+
+.payment-method__inner{
+  background-color: #f9f9f9;
+  padding: 15px 17px;
+  border-radius: 12px;
+}
+
+.payment-method__wrapper--active{
+  background-color: #fff;
+}
+
+
+.payment-method__wrapper-input{
+  background-color: #F9F9F9;
+}
+.payment-method__wrapper--active .payment-method__wrapper-input {
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 576px){
+  .card-related img{
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .product-order__price-box{
+    display: block;
+    margin-bottom: 8px;
+  }
+    .product-order__btn{
+      margin-bottom: 8px;
+    }
+}
+
+
 .breadcrumb {
   background-color: #fff !important;
 }
@@ -94,6 +332,14 @@
   height: 20px;
   background-image: url("../img/ic-actions-close-simple.svg");
   background-repeat: no-repeat;
+}
+
+.apply-code__btn {
+  white-space: nowrap;
+}
+
+.input-group {
+  outline: none;
 }
 
 @media only screen and (min-width: 500px) {
