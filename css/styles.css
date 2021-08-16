@@ -346,6 +346,12 @@
   outline: none;
 }
 
+@media only screen and (max-width: 335px) {
+  .total__price {
+    font-size: 28px;
+  }
+}
+
 @media only screen and (min-width: 500px) {
   .price-or-select {
     flex-direction: row;
@@ -367,6 +373,16 @@
   .price {
     font-size: 22px;
     line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .summary{
+    /* order: 1; */
+  }
+
+  .bill-wrapper{
+    flex-direction: column-reverse;
   }
 }
 
