@@ -9,159 +9,161 @@
   </head>
   <body class="d-flex flex-column h-100">
 
-    <nav class="container-lg beradcrumb bg-white">
-      <ul class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a class="breadcrumb__link text-info" href="#">Homepage</a>
-        </li>
-        <li class="breadcrumb-item">
-          <a class="breadcrumb__link text-info" href="chekout.html">Fruit and vagetables</a>
-        </li>
-        <li class="breadcrumb-item active">
-          <a class="breadcrumb__link text-dark" href="chekout.html">Carrots from Tomissy Farm</a>
-        </li>
-      </ul>
-    </nav>
-
-    <main class="flex-grow-1 py-4">
-      <section class="product container-lg">
-        <div class="product__head d-flex justify-content-between align-items-center pb-5">
-        <h2 class="product__title h5 mb-0">Related Products</h2>
-        <a class="products__link btn d-flex align-items-center font-weight-bold" href="#">More products</a>
-      </div>
-      </section>
-
-      <div class="prod row justify-content-between"></div>
-        <section class="carrots container-lg row mx-auto">
-            <div class="col-sm-12 justify-content-center col-md-6 mx-auto">
-              <img class="img-fluid w-100 mb-4" src="img/img-dinner.png" alt="Product image" width="570" height="436">
-              <img class="img-fluid w-100 mb-4" src="img/img-dinner.png" alt="Product image" width="570" height="436">
-              <img class="img-fluid w-100" src="img/img-dinner.png" alt="Product image" width="570" height="436">
-            </div>
-            <div class="col-sm-12 carrots-info col-md-6">
-              <h1 class="h2 font-weight-bold">Carrots from Tomissy farm</h1>
-              <p>Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a full love to his Bio products. Tomisso’s carrots are growing on the fields naturally.</p>
-              <div class="description row my-4 my-md-5">
-                <dl class="col-md-6">
-                  <div class="d-flex">
-                    <dt class="mr-5 font-weight-normal text-secondary
-                    ">SKU:</dt>
-                    <dd class="mb-0">76645</dd>
-                  </div>
-                  <div class="d-flex">
-                    <dt class="mr-5 font-weight-normal text-secondary">Category:</dt>
-                    <dd class="mb-0"><u>Vegetables</u></dd>
-                  </div>
-                  <div class="d-flex">
-                    <dt class="mr-5 font-weight-normal text-secondary">Stock</dt>
-                    <dd class="mb-0 active text-success"><ins>In Stock</ins></dd>
-                  </div>
-                  <div class="d-flex">
-                    <dt class="mr-5 font-weight-normal text-secondary">Farm</dt>
-                    <dd class="mb-0">Grocery Tarm Fields</dd>
-                  </div>
-                </dl>
-                <dl class="col-md-6">
-                  <div class="d-flex">
-                    <dt class="mr-5 font-weight-normal text-secondary">Freshness:</dt>
-                    <dd class="mb-0">1 days old</dd>
-                  </div>
-                  <div class="d-flex">
-                    <dt class="mr-5 font-weight-normal text-secondary">Buy by:</dt>
-                    <dd class="mb-0">pcs, kgs, box, pack</dd>
-                  </div>
-                  <div class="d-flex">
-                    <dt class="mr-5 font-weight-normal text-secondary">Delivery:</dt>
-                    <dd class="mb-0">in 2 days</dd>
-                  </div>
-                  <div class="d-flex">
-                    <dt class="mr-5 font-weight-normal text-secondary">Delivery area</dt>
-                    <dd class="mb-0">Czech republic</dd>
-                  </div>
-                </dl>
-              </div>
-            <div class="product__prices row align-items-center justify-content-between border rounded-lg">
-              <div class="d-flex flex-column col-3 pr-2">
-                <span class="price">36.23</span>
-                <span class="price__sale text-secondary">45.56</span>
-              </div>
-            <div class="product-select__group col-4 flex-grow-1">
-              <select class="custom-select" name="product">
-                <option value="test">Pcs</option>
-                <option value="test1">Test1</option>
-                <option value="test2">Test2</option>
-                <option value="test3">Test3</option>
-              </select>
-            </div>
-            <div class="product-add col-4">
-              <button class="btn-sm bg-success">Add to card</button>
-          </div>
-        </div>
-        <div class="d-flex my-3">
-          <button class="btn__hearth pl-3 btn font-weight-bold mr-sm-2" type="button">Add to my wish list</button>
-          <button class="btn__layout btn pl-3 font-weight-bold" type="button">Compare</button>
-        </div>
-        <ul class="nav flex-nowrap nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Description</a>
+    <div class="container-lg">
+      <nav class="beradcrumb bg-white">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a class="breadcrumb__link text-info" href="#">Homepage</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Reviews <span class="flex-nowrap badge badge-success">18</span></a>
+          <li class="breadcrumb-item">
+            <a class="breadcrumb__link text-info" href="chekout.html">Fruit and vagetables</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Questions <span class="badge badge-success">4</span></a>
+          <li class="breadcrumb-item active">
+            <a class="breadcrumb__link text-dark" href="chekout.html">Carrots from Tomissy Farm</a>
           </li>
         </ul>
-        <div class="nav__content my-4">
-          <h3 class="h5">Origins</h3>
-          <p>We work hard to ensure that the fruit and vegetables we sell are fresh and high in quality. If we don’t grow them ourselves, we source them from carefully chosen suppliers, preferring to buy locally whenever possible.
-          </p>
-          <h3 class="h5 mt-4">How to cook</h3>
-          <p>From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour to an enormous number of recipes.</p>
-        </div>
-        <div class="product__table">
-          <h3 class="h5">Full of Vitamins!</h3>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Vitamins</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">% DV</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th class="font-weight-normal text-secondary" scope="row">Vitamin A equiv.</th>
-                <td class="text-secondary">735 μg</td>
-                <td class="text-secondary">104 %</td>
-              </tr>
-              <tr>
-                <th class="font-weight-normal text-secondary" scope="row">Thiamine (B1)</th>
-                <td class="text-secondary">0.066 mg</td>
-                <td class="text-secondary">6 %</td>
-              </tr>
-              <tr>
-                <th class="font-weight-normal text-secondary" scope="row">Niacin (B3)</th>
-                <td class="text-secondary">0.983 mg</td>
-                <td class="text-secondary">7 %</td>
-              </tr>
-              <tr>
-                <th class="font-weight-normal text-secondary" scope="row">Folate (Bg)</th>
-                <td class="text-secondary">19 μg</td>
-                <td class="text-secondary">5 %</td>
-              </tr>
-              <tr>
-                <th class="font-weight-normal text-secondary" scope="row">Vitamin C</th>
-                <td class="text-secondary">5.9 mg</td>
-                <td class="text-secondary">7 %</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      </nav>
+
+      <main class="flex-grow-1 py-4">
+        <section class="product">
+          <div class="product__head d-flex justify-content-between align-items-center pb-5">
+          <h2 class="product__title h5 mb-0">Related Products</h2>
+          <a class="products__link btn d-flex align-items-center font-weight-bold" href="#">More products</a>
         </div>
         </section>
-      </div>
-    </main>
+
+        <div class="prod row justify-content-between"></div>
+          <section class="carrots row mx-auto">
+              <div class="col-sm-12 justify-content-center col-md-6 mx-auto">
+                <img class="img-fluid w-100 mb-4" src="img/img-dinner.png" alt="Product image" width="570" height="436">
+                <img class="img-fluid w-100 mb-4" src="img/img-dinner.png" alt="Product image" width="570" height="436">
+                <img class="img-fluid w-100" src="img/img-dinner.png" alt="Product image" width="570" height="436">
+              </div>
+              <div class="col-sm-12 carrots-info col-md-6">
+                <h1 class="h2 font-weight-bold">Carrots from Tomissy farm</h1>
+                <p>Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a full love to his Bio products. Tomisso’s carrots are growing on the fields naturally.</p>
+                <div class="description row my-4 my-md-5">
+                  <dl class="col-md-6">
+                    <div class="d-flex">
+                      <dt class="mr-5 font-weight-normal text-secondary
+                      ">SKU:</dt>
+                      <dd class="mb-0">76645</dd>
+                    </div>
+                    <div class="d-flex">
+                      <dt class="mr-5 font-weight-normal text-secondary">Category:</dt>
+                      <dd class="mb-0"><u>Vegetables</u></dd>
+                    </div>
+                    <div class="d-flex">
+                      <dt class="mr-5 font-weight-normal text-secondary">Stock</dt>
+                      <dd class="mb-0 active text-success"><ins>In Stock</ins></dd>
+                    </div>
+                    <div class="d-flex">
+                      <dt class="mr-5 font-weight-normal text-secondary">Farm</dt>
+                      <dd class="mb-0">Grocery Tarm Fields</dd>
+                    </div>
+                  </dl>
+                  <dl class="col-md-6">
+                    <div class="d-flex">
+                      <dt class="mr-5 font-weight-normal text-secondary">Freshness:</dt>
+                      <dd class="mb-0">1 days old</dd>
+                    </div>
+                    <div class="d-flex">
+                      <dt class="mr-5 font-weight-normal text-secondary">Buy by:</dt>
+                      <dd class="mb-0">pcs, kgs, box, pack</dd>
+                    </div>
+                    <div class="d-flex">
+                      <dt class="mr-5 font-weight-normal text-secondary">Delivery:</dt>
+                      <dd class="mb-0">in 2 days</dd>
+                    </div>
+                    <div class="d-flex">
+                      <dt class="mr-5 font-weight-normal text-secondary">Delivery area</dt>
+                      <dd class="mb-0">Czech republic</dd>
+                    </div>
+                  </dl>
+                </div>
+              <div class="product__prices row align-items-center justify-content-between border rounded-lg">
+                <div class="d-flex flex-column col-3 pr-2">
+                  <span class="price">36.23</span>
+                  <span class="price__sale text-secondary">45.56</span>
+                </div>
+              <div class="product-select__group col-4 flex-grow-1">
+                <select class="custom-select" name="product">
+                  <option value="test">Pcs</option>
+                  <option value="test1">Test1</option>
+                  <option value="test2">Test2</option>
+                  <option value="test3">Test3</option>
+                </select>
+              </div>
+              <div class="product-add col-4">
+                <button class="btn-sm bg-success">Add to card</button>
+            </div>
+          </div>
+          <div class="d-flex my-3">
+            <button class="btn__hearth pl-3 btn font-weight-bold mr-sm-2" type="button">Add to my wish list</button>
+            <button class="btn__layout btn pl-3 font-weight-bold" type="button">Compare</button>
+          </div>
+          <ul class="nav flex-nowrap nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Description</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reviews <span class="flex-nowrap badge badge-success">18</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Questions <span class="badge badge-success">4</span></a>
+            </li>
+          </ul>
+          <div class="nav__content my-4">
+            <h3 class="h5">Origins</h3>
+            <p>We work hard to ensure that the fruit and vegetables we sell are fresh and high in quality. If we don’t grow them ourselves, we source them from carefully chosen suppliers, preferring to buy locally whenever possible.
+            </p>
+            <h3 class="h5 mt-4">How to cook</h3>
+            <p>From roasts, salads and soups to casseroles and cakes, Carrots will lend sweetness, texture and colour to an enormous number of recipes.</p>
+          </div>
+          <div class="product__table">
+            <h3 class="h5">Full of Vitamins!</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Vitamins</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">% DV</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="font-weight-normal text-secondary" scope="row">Vitamin A equiv.</th>
+                  <td class="text-secondary">735 μg</td>
+                  <td class="text-secondary">104 %</td>
+                </tr>
+                <tr>
+                  <th class="font-weight-normal text-secondary" scope="row">Thiamine (B1)</th>
+                  <td class="text-secondary">0.066 mg</td>
+                  <td class="text-secondary">6 %</td>
+                </tr>
+                <tr>
+                  <th class="font-weight-normal text-secondary" scope="row">Niacin (B3)</th>
+                  <td class="text-secondary">0.983 mg</td>
+                  <td class="text-secondary">7 %</td>
+                </tr>
+                <tr>
+                  <th class="font-weight-normal text-secondary" scope="row">Folate (Bg)</th>
+                  <td class="text-secondary">19 μg</td>
+                  <td class="text-secondary">5 %</td>
+                </tr>
+                <tr>
+                  <th class="font-weight-normal text-secondary" scope="row">Vitamin C</th>
+                  <td class="text-secondary">5.9 mg</td>
+                  <td class="text-secondary">7 %</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+          </section>
+        </div>
+      </main>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

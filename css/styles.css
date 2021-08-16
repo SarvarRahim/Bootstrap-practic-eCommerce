@@ -314,6 +314,7 @@
   height: 16px;
   background-image: url("../img/ic-actions-heart.svg");
   background-repeat: no-repeat;
+  margin-right: 5px;
 }
 
 .btn__compare::before {
@@ -323,6 +324,7 @@
   height: 16px;
   background-image: url("../img/ic-layout-picture-right.svg");
   background-repeat: no-repeat;
+  margin-right: 5px;
 }
 
 .btn__remove::before {
@@ -332,6 +334,8 @@
   height: 20px;
   background-image: url("../img/ic-actions-close-simple.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
 }
 
 .apply-code__btn {
@@ -363,5 +367,11 @@
   .price {
     font-size: 22px;
     line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .price-or-select {
+    flex-direction: column !important;
   }
 }
